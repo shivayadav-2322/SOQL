@@ -1,9 +1,5 @@
-public with sharing class AccountQuery {
-    public AccountQuery() 
-    {
-        List<Account> lstAcc = [Select Id, Name, Industry From Account WITH SECURITY_ENFORCED];
-    }
-}
 
+// This query is retrieves data from Account Object
 
 Select Id, Name, Industry From Account WITH SECURITY_ENFORCED;
+
