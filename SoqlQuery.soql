@@ -1,0 +1,9 @@
+public with sharing class AccountQuery {
+    public AccountQuery() 
+    {
+        List<Account> lstAcc = [Select Id, Name, Industry From Account WITH SECURITY_ENFORCED];
+    }
+}
+
+
+Select Id, Name, Industry From Account WITH SECURITY_ENFORCED;
